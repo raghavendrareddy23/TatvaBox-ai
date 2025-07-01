@@ -66,6 +66,8 @@ GROQ_API_KEY=<Your Groq AI Key>
 To run backend use 
 `dotenvx run -- node index.js`
 
+---
+
 ## Future Improvements 
 
 - Adding Listing Page for Tatva
