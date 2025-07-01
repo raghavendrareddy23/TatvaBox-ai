@@ -76,3 +76,6 @@ To run backend use
 - Add a Q&A to give more information about it and what it is for
 - UI improvements
 - Backend Api improments 
+
+
+Also have ability to implement project with SQL as database 
