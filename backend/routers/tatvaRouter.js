@@ -11,7 +11,7 @@ const tatvaRouter = express.Router();
 tatvaRouter.get('/random', getRandomTatva);
 tatvaRouter.get('/', getAllTatvas);
 tatvaRouter.get('/:id', getTatvaById);
-tatvaRouter.post('/create',  upload.single('image'), createTatva);
+tatvaRouter.post('/create',isAuthenticated, isAdmin,  upload.single('image'), createTatva);
 tatvaRouter.put('/:id', isAuthenticated, isAdmin, upload.single('image'), updateTatva);
 tatvaRouter.delete('/:id', isAuthenticated, isAdmin, deleteTatva);
 
